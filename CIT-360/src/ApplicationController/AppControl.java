@@ -13,7 +13,7 @@ import java.util.Scanner;
  */
 public class AppControl {
    public static void main(String[] args) throws InterruptedException {
-       AppController frontController = new AppController();
+       controller frontController = new controller();
        System.out.println("Welcome to the Application Controller. " + "\n"
                + "To test it out, please type in the name of a " + "\n"
                + "film listed below that you want to know more about." + "\n"  + "\n"
@@ -21,8 +21,8 @@ public class AppControl {
                + "Frozen" + "\n"
                + "Moana");
        Scanner input = new Scanner(System.in);
-       AppController app = new AppController();
-       app.dispatchRequest(input.next());
+       controller app = new controller();
+       app.request(input.next());
    }
    
 }

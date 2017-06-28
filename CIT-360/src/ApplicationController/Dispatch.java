@@ -9,21 +9,21 @@ package ApplicationController;
  *
  * @author deannasquire
  */
-public class Dispatcher {
+public class Dispatch {
     
     private TangledInfo tangled;
     private FrozenInfo frozen;
     private MoanaInfo moana;
     private ErrorPage errorName;
     
-    public Dispatcher() {
+    public Dispatch() {
         tangled = new TangledInfo();
         frozen = new FrozenInfo();
         moana = new MoanaInfo();
         errorName = new ErrorPage();
     }
     
-    public void dispatch(String request) throws InterruptedException {
+    public void dispatchPage(String request) throws InterruptedException {
         if(request.equalsIgnoreCase("Tangled")){
             tangled.show();
             
