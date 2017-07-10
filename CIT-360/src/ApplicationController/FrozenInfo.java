@@ -9,7 +9,7 @@ package ApplicationController;
  *
  * @author deannasquire
  */
-public class FrozenInfo {
+public class FrozenInfo implements filmHandler{
     public void show(){
         System.out.println("\n" + "Frozen:" + "\n"
                 + "Theater Release: Nov 27, 2013" + "\n"

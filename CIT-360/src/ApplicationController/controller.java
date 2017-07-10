@@ -4,29 +4,25 @@
  * and open the template in the editor.
  */
 package ApplicationController;
-
+import java.util.HashMap;
 /**
  *
  * @author deannasquire
  */
 public class controller {
     
-    private Dispatch d;
+    public static HashMap<String,filmHandler> hashMapCommands = new HashMap<String,filmHandler>();
+   
     
-    public controller(){
-        d = new Dispatch();
+    public static void handle(String command){
+        
+        hashMapCommands.put("Frozen", new FrozenInfo());
+        hashMapCommands.put("Moana", new MoanaInfo());
+        hashMapCommands.put("Tangled", new TangledInfo());
+        
+        filmHandler handler = hashMapCommands.get(command);
+        
+        handler.show();
     }
-    
-    private boolean isRequested(){
-        return true;
-    }
-    
-    public void request(String request) throws InterruptedException {
-      
-        if(isRequested()){
-            d.dispatchPage(request);
-            
-        }
-    }
-    
+  
 }

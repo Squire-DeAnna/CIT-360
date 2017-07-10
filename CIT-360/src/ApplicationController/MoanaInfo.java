@@ -9,7 +9,7 @@ package ApplicationController;
  *
  * @author deannasquire
  */
-public class MoanaInfo {
+public class MoanaInfo implements filmHandler{
     public void show(){
         System.out.println("\n" + "Moana:" + "\n"
                 + "Theater Release: Nov 24, 2016" + "\n"

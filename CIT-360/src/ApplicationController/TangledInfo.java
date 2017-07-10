@@ -9,7 +9,7 @@ package ApplicationController;
  *
  * @author deannasquire
  */
-public class TangledInfo {
+public class TangledInfo implements filmHandler{
     public void show(){
         System.out.println("\n" + "Tangled:" + "\n"
                 + "Theater Release: Nov 24, 2010" + "\n"
