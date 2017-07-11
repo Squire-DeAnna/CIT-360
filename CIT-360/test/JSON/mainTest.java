@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package JavaCollections;
+package JSON;
 
 import org.junit.After;
 import org.junit.Before;
@@ -14,9 +14,9 @@ import static org.junit.Assert.*;
  *
  * @author deannasquire
  */
-public class listExampleTest {
+public class mainTest {
     
-    public listExampleTest() {
+    public mainTest() {
     }
     
     @Before
@@ -28,13 +28,13 @@ public class listExampleTest {
     }
 
     /**
-     * Test of main method, of class listExample.
+     * Test of main method, of class main.
      */
     @Test
     public void testMain() {
         System.out.println("main");
         String[] args = null;
-        listExample.main(args);
+        main.main(args);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }
