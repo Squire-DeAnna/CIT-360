@@ -17,7 +17,7 @@ public class calculator {
         int number1 = input1;
         int number2 = input2;
 
-        if (number1 < number2)
+        if (number1 != number2)
             return true;
         else
             return false;

@@ -22,12 +22,12 @@ public class arraysTest {
      */
     @Test
     public void testMain() {
-        System.out.println("Arrays Test #1");
-        int[] in1 = {10, 12, 14, 11, 15};
-        int[] expResult = {10, 12, 14, 11, 15};
-        int[] result = arrays.main(in1);
+        System.out.println("Arrays Test: ");
+        String[] list1 = {"[\"bananas\",\"oranges\",\"apples\"]"};
+        String[] expResult = {"[\"bananas\",\"oranges\",\"apples\"]"};
+        String[] result = arrays.main(list1);
         assertArrayEquals(expResult, result);
-        
+        System.out.println("Passed");
         }
 }
     

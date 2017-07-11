@@ -39,7 +39,7 @@ public class calculatorTest {
     
         System.out.println("assertFalse test:");
         input1 = 5;
-        input2 = 3;
+        input2 = 5;
         result = calculator.result(input1, input2);
         assertFalse(result);
         System.out.println("Passed");

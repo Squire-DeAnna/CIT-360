@@ -13,10 +13,11 @@ import java.util.*;
  */
 public class arrays {
     
-    public static int[] main(int[] in1){
+    public static String[] main(String[] string1){
         
-        int[] number1 = in1;
-        return number1;
+        String[] list1 = string1;
+        Arrays.toString(list1);
+        return list1;
     }
     
     
