@@ -5,7 +5,6 @@
  */
 package MVC;
 
-import javax.swing.*;
 
 /**
  *
@@ -13,26 +12,18 @@ import javax.swing.*;
  */
 public class Model {
     
+    private boolean calcValue;
     
-    
-    
-     
- 
-        String[] columns = {"Film Title",
-                                "Production Company",
-                                "Year Made"};
- 
-        Object[][] filmInfo = {
-        {"Cars", "Pixar", 2006},
-        {"Wall-E", "Pixar", 2008},
-        {"Bolt", "Disney", 2008},
-        {"Toy Story 3", "Pixar", 2010},
-        {"Tangled", "Disney", 2010},
-        {"Brave", "Pixar", 2012},
-        {"Frozen", "Disney", 2013},
-        {"Moana", "Disney", 2016}
-        };
+    public void checkFilmAge(int ageInput){
+        int check = 13;
         
-        final JTable films = new JTable(filmInfo, columns);
+        if (ageInput < check){
+            calcValue = false;
+        } else {
+            calcValue = true;
+        }
+    }
+    
+    public boolean getCalcValue() {return calcValue;}
         
 }
